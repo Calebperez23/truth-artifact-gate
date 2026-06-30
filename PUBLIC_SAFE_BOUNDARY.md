@@ -13,10 +13,9 @@ This repository releases a narrow claim-admissibility proof surface and withhold
 ## Not included in this repository
 
 - Private runtime internals
-- Personal continuity or identity material
+- Non-public personal materials
 - Private source material
 - Local filesystem evidence dumps
 - Company-specific accusations
 - Non-public source materials
-- Confidential trade-secret doctrine
-
+- Confidential implementation details

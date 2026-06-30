@@ -2,7 +2,7 @@
 
 This pack is intentionally narrow.
 
-It does not publish the broader Serene runtime, private continuity material, identity material, local filesystem traces, private architecture files, or confidential implementation records.
+It publishes a minimal claim-admissibility proof for AI agents.
 
 Public wedge:
 
@@ -29,8 +29,7 @@ Do not lead with:
 - consciousness
 - selfhood
 - companion architecture
-- private memory/continuity substrate
-- full cognitive runtime internals
+- private runtime internals
 - accusations against any company
 - confidential implementation details
 
@@ -41,5 +40,3 @@ Do not lead with:
 ## Suggested tags
 
 `ai-agents`, `agent-reliability`, `runtime-governance`, `evidence`, `provenance`, `claim-admissibility`, `llm-tools`
-
-

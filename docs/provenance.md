@@ -1,12 +1,10 @@
 # Provenance note
 
-This public pack was assembled from a private architecture line but intentionally excludes private implementation details.
+This public pack intentionally exposes only the claim-admissibility proof surface.
 
 The public claim is narrow:
 
 > A completion claim by an AI agent is inadmissible unless backed by execution evidence.
-
-The private architecture contains broader runtime concepts, but this release only plants the public-safe wedge around claim admissibility.
 
 ## Included
 
@@ -14,17 +12,14 @@ The private architecture contains broader runtime concepts, but this release onl
 - Python verifier
 - Example claims and artifacts
 - Tests
-- Launch copy
 - Threat model
 
 ## Excluded
 
 - Private runtime source
-- Private memory databases
-- identity/continuity material
-- non-public logs
-- confidential implementation materials
-- local filesystem paths beyond generic examples
-- company-specific allegations
-
-
+- Non-public data stores
+- Non-public personal materials
+- Non-public logs
+- Confidential implementation materials
+- Local filesystem paths beyond generic examples
+- Company-specific allegations
