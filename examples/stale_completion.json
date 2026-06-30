@@ -1,0 +1,11 @@
+{
+  "claim_id": "claim-stale-001",
+  "agent_claim": "I created the requested report.",
+  "claimed_action": "create_file",
+  "artifact": {
+    "path": "examples/artifacts/stale_report.txt",
+    "sha256": "eb40b14f31f101a9e1d245542d0609bad1f14afbec82dbcb0addb271a3e2a23c"
+  }
+}
+
+

@@ -1,0 +1,9 @@
+{
+    "claim_id":  "claim-valid-001",
+    "agent_claim":  "I created the requested report.",
+    "claimed_action":  "create_file",
+    "artifact":  {
+                     "path":  "examples/artifacts/valid_report.txt",
+                     "sha256":  "988a44b149d3356663c4905806504b4d82c8d502e1960a5b9f73170378cf9918"
+                 }
+}

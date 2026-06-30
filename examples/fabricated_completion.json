@@ -1,0 +1,11 @@
+{
+  "claim_id": "claim-fabricated-001",
+  "agent_claim": "I created the requested report.",
+  "claimed_action": "create_file",
+  "artifact": {
+    "path": "examples/artifacts/missing_report.txt",
+    "sha256": ""
+  }
+}
+
+
