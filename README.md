@@ -1,6 +1,8 @@
 # Truth-Artifact Gate
 
-AI agents fabricate completion claims.
+![Tests](https://github.com/Calebperez23/truth-artifact-gate/actions/workflows/test.yml/badge.svg)
+
+**Stop AI agents from saying "done" without proof.**
 
 They say files were created, emails were sent, commands were run, tests passed, tickets were closed, or deployments happened — even when no execution evidence exists.
 
@@ -21,6 +23,12 @@ No artifact means no admissible completion.
 ## 60-second demo
 
 Open `demo/index.html` in a browser. No server. No model. No dependencies.
+
+Live demo after GitHub Pages is enabled:
+
+``text
+https://calebperez23.github.io/truth-artifact-gate/demo/
+``
 
 The demo shows three cases:
 
