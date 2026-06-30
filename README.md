@@ -4,9 +4,17 @@
 
 **Stop AI agents from saying "done" without proof.**
 
-They say files were created, emails were sent, commands were run, tests passed, tickets were closed, or deployments happened — even when no execution evidence exists.
+AI agents can claim files were created, refunds were issued, emails were sent, tests passed, tickets closed, or deployments completed — with no execution evidence.
 
-**Truth-Artifact Gate makes those claims inadmissible until execution evidence exists.**
+Truth-Artifact Gate catches that failure.
+
+It rejects completion claims unless the runtime can point to an artifact, receipt, trace, hash, timestamp, readback, or verified side effect.
+
+```text
+AI agent: "I issued the customer refund."
+Runtime: "Where is the payment processor receipt?"
+No receipt: rejected.
+```
 
 This is not a prompt trick. It is not a model benchmark. It is not another approval layer.
 
@@ -16,7 +24,7 @@ It is a runtime boundary between language and evidence.
 
 Generated claims are not facts.
 
-An agent may generate a claim, but the runtime does not accept that claim as true unless it is backed by an execution artifact: a file, receipt, trace, hash, timestamp, readback, or verified side effect.
+An agent may generate a claim, but the runtime does not accept that claim as true unless it is backed by execution evidence.
 
 No artifact means no admissible completion.
 
@@ -26,15 +34,15 @@ Open `demo/index.html` in a browser. No server. No model. No dependencies.
 
 Live demo after GitHub Pages is enabled:
 
-``text
+```text
 https://calebperez23.github.io/truth-artifact-gate/demo/
-``
+```
 
 The demo shows three cases:
 
-1. **Fabricated completion claim** → rejected because no artifact exists.
-2. **Executed completion** → admitted because an artifact, hash, and timestamp exist.
-3. **Tampered / stale completion** → rejected because evidence no longer matches.
+1. **Fabricated refund claim** -> rejected because no payment receipt exists.
+2. **Executed report completion** -> admitted because an artifact, hash, and timestamp exist.
+3. **Stale deployment evidence** -> rejected because evidence no longer matches.
 
 ## Why this matters
 
@@ -43,12 +51,6 @@ Agent systems increasingly perform real work. The failure mode is no longer only
 The dangerous failure is an agent claiming work was completed when the world contains no proof that it happened.
 
 Truth-Artifact Gate treats completion as an evidentiary state, not a sentence.
-
-## Quick start: browser
-
-```text
-open demo/index.html
-```
 
 ## Quick start: Python
 
@@ -65,45 +67,14 @@ Everyone gates actions.
 
 This gates the claim.
 
-## Repository shape
-
-```text
-truth-artifact-gate/
-  README.md
-  demo/
-    index.html
-    gate.js
-    styles.css
-    sample_claims.json
-  src/
-    claim_gate.py
-    artifact_store.py
-    verifier.py
-  examples/
-    fabricated_completion.json
-    valid_completion.json
-    stale_completion.json
-    artifacts/
-      valid_report.txt
-      stale_report.txt
-  tests/
-    test_claim_gate.py
-  docs/
-    claim-admissibility.md
-    provenance.md
-    public-release-notes.md
-    threat-model.md
-```
-
 ## Status
 
-Public-safe proof pack. It intentionally does **not** include private runtime internals, identity material, local paths, trade-secret architecture files, model prompts, or sensitive evidence archives.
+Public-safe proof pack.
+
+It intentionally does **not** include private runtime internals, identity material, local paths, confidential implementation files, model prompts, or sensitive evidence archives.
 
 ## License
 
 Copyright (c) 2026 Caleb Perez. All rights reserved.
 
 No license is granted unless explicitly stated in `LICENSE`.
-
-
-
