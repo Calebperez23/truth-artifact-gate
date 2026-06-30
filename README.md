@@ -4,14 +4,13 @@
 
 **Stop AI agents from saying "done" without proof.**
 
-AI agents can claim files were created, refunds were issued, emails were sent, tests passed, tickets closed, or deployments completed — with no execution evidence.
+AI agents can claim files were created, refunds were issued, emails were sent, tests passed, tickets closed, or deployments completed ? with no execution evidence.
 
 Truth-Artifact Gate catches that failure.
 
 It rejects completion claims unless the runtime can point to an artifact, receipt, trace, hash, timestamp, readback, or verified side effect.
 
-```
-text
+```text
 AI agent: "I issued the customer refund."
 Runtime: "Where is the payment processor receipt?"
 No receipt: rejected.
@@ -35,8 +34,7 @@ Open `demo/index.html` in a browser. No server. No model. No dependencies.
 
 Live demo:
 
-```
-text
+```text
 https://calebperez23.github.io/truth-artifact-gate/demo/
 ```
 
@@ -56,8 +54,7 @@ Truth-Artifact Gate treats completion as an evidentiary state, not a sentence.
 
 ## Quick start: Python
 
-```
-bash
+```bash
 python -m unittest discover -s tests
 python src/claim_gate.py examples/fabricated_completion.json
 python src/claim_gate.py examples/valid_completion.json
